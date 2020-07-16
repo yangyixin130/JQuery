@@ -1,0 +1,20 @@
+淡入淡出效果动画：
+			CSS opaciy属性 
+			fadeIn 会将opacity属性从0搭配100向右淡出
+			fadeOut 会将opacity属性从100到0 向左淡出
+滑动的关键是height属性
+				将所选元素的height减为0在改变display none属性==hide外面加一层slide
+方法串链结合效果$("#lightning1").fadeIn() 将元素从hidden改为visible.fadeOut()然后淡出为完全可见show 
+如果没加一个时限，那么默认是normal0.4S
+定时函数(定时器)
+			function 函数名(定时参数){
+			$("#lightning1").fadeIn();
+			setTimeout(函数名,时间间隔)
+			}
+.fadeIn(250),fadeOut(250);与toggle有什么区别：
+			toggle只是一个方法，切换元素的状态
+			fadeIn和fadeOut串联在一起会创建顺序效果
+动画animate只适用于数值设置的CSS属性
+注意设置动画效果，完全取决于当前的CSS属性设置
+利用操作符组合实现元素的相对移动
+left:+=20每次调用动画都加20

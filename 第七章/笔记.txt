@@ -1,0 +1,5 @@
+用window对象控制定时效果
+	window：onblur加载进去 onfocus 离开页面事件进行处理
+	定时器方法
+		setTimeout设置一个等待事件
+		settlinterval设置一个函数反复运行，每次重复前有个事件间隔 delay 在效果链中的效果之间加入一个停顿

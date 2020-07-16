@@ -1,0 +1,28 @@
+用对象构造函数创建可重用的对象
+function myPerson对象名(a,b)函数参数{
+	this.name(对象属性)=a;设置对象属性值
+	this,age=b;
+}
+一次性
+var myCountry={
+		getCapital:function(){
+			alert(this.myCapital);
+		},
+
+		myName:'USA',
+		myCapital:'Washinto DC'
+	},
+	一次性与可重用对象有什么区别
+			可重用定义模板指定属性和方法之后，可以随便创建对象副本
+在数组中增加和更新元素
+	更新my_arr[0]="Spain"
+		my_arr[0]="Italy"
+循环
+	for循环适合将代码重复指定的次数
+	do while循环会允许一次代码，然后不断允许相同代码，直至满足某个特定条件
+判断变量是否在数组当中 inArray 索引
+var index 创建一个变量保存函数返回值，=$.inArray(value要查找的值，array 查找的数组) 不在里面返回-1
+appendTo与appen区别，一个是放在这个方法前，一个是放在内容中
+比较和逻辑操作符
+a==b值相同 a===b值和类型都相同 完全相同
+a||b或一个为true则为true a&&b与 二者都必须为真

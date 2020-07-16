@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Jump for Joy</title> 
+		<link href="styles/my_style.css" rel="stylesheet">
+	</head> 
+	<body> 
+		<div id="header">
+			<h2>优惠劵</h2>
+		</div>
+		<div id="main">
+			<div class="guess_box1"><img src="images/素材2.png"/></div>
+			<div class="guess_box2"><img src="images/素材2.png"/></div>
+			<div class="guess_box3"><img src="images/素材2.png"/></div>
+			<div class="guess_box4"><img src="images/素材2.png"/></div>
+		</div>
+		<div id="Img">
+		<div class="img1"><img src="images/参考2.png"></div>
+		<div class="img2"><img src="images/素材1.png"></div>
+		<div class="img3"><img src="images/素材1.png"></div>
+		<div class="img4"><img src="images/素材1.png"></div>
+		</div>
+		<script src="scripts/jquery-1.6.2.min.js"></script>
+		<script>
+			$(document).ready(function() {//保证页面可以交互
+				$(".guess_box1").click(function() {//点击事件
+					alert("恭喜你获3折扣");
+					$(".img1").toggle();
+				});
+				$(".guess_box2").click(function() {//点击事件
+					$(".img2").toggle();
+				});
+				$(".guess_box3").click(function() {//点击事件
+					alert("很遗憾没有折扣");
+					$(".img3").toggle();
+				});
+				$(".guess_box4").click(function() {//点击事件
+					alert("很遗憾没有折扣");
+					$(".img4").toggle();
+				});
+			});
+		</script>
+	</body>
+</html>

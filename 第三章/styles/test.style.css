@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2020-07-01 09:44:44
+ * @version $Id$
+ */
+ .hover{
+ 	border: solid #f00 3px;
+ }
+ .no_hover{
+ 	border: solid #000 3px;
+ }
